@@ -21,7 +21,7 @@
 
 ## Sobre el proyecto (◕‿◕✿)
 
-Sitio web personal que funciona como mi hoja de vida pública. Lo hice para la actividad colaborativa del curso **Introducción a los lenguajes de Internet** en la **Fundación Universitaria Compensar**.
+Sitio web personal que funciona como mi hoja de vida pública, hecho con HTML, CSS y JavaScript. Lo hice para la actividad colaborativa del curso **Introducción a los lenguajes de Internet** en la **Fundación Universitaria Compensar**.
 
 Quería que no fuera una hoja de vida más, sino que se notara quién soy. Por eso tiene **dos temas** y una página con su propio estilo:
 
