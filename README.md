@@ -114,13 +114,6 @@ hoja-de-vida/
 ├── fonts/
 └── img/
 ```
-
-## Verlo en tu computador
-
-1. Descarga el repositorio: **Code → Download ZIP**.
-2. Descomprímelo.
-3. Abre `index.html` con doble clic en tu navegador.
-
 ---
 
 <div align="center">
