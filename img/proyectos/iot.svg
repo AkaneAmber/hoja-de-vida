@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="ESP32 + NODE-RED">
+  <defs><pattern id="c" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#141418"/><rect width="2" height="8" fill="#1d1d23"/></pattern></defs>
+  <rect width="320" height="200" fill="url(#c)"/>
+  <polygon points="0,140 320,90 320,110 0,160" fill="#00d2be" opacity=".9"/>
+  <polygon points="0,166 320,116 320,122 0,172" fill="#ffffff" opacity=".6"/>
+  <text x="300" y="70" text-anchor="end" font-family="Arial Narrow, Arial, sans-serif" font-size="78" font-style="italic" font-weight="900" fill="#ffffff" opacity=".12">05</text>
+  <rect x="24" y="26" width="76" height="76" fill="#0b0b0d" stroke="#00d2be" stroke-width="4" transform="skewX(-10)"/>
+  <text x="56" y="74" text-anchor="middle" font-size="28" font-family="Arial Narrow, Arial, sans-serif" font-weight="800" fill="#ffffff">((·))</text>
+  <text x="24" y="192" font-family="Arial Narrow, Arial, sans-serif" font-size="22" font-style="italic" font-weight="900" fill="#ffffff">ESP32 + NODE-RED</text>
+</svg>

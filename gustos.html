@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gustos e intereses de Isabel Sofía Piñeros Arias: F1, música, arte, videojuegos y comida.">
+  <meta name="author" content="Isabel Sofía Piñeros Arias">
+  <title>Gustos | Isabel Piñeros</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/fuentes.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body class="pagina-gustos">
+  <!-- Menú -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="logo" href="index.html">
+        <img src="img/favicon.svg" alt="Logo IP">
+        <span>Isa<span class="resaltado-amarillo">.</span>dev</span>
+      </a>
+      <nav aria-label="Menú principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="gustos.html">Gustos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="acciones-nav">
+        <button class="boton-tema" id="boton-tema" type="button" aria-label="Cambiar a Modo Pandora">✦ <span class="texto-tema">Modo Pandora</span></button>
+        <button class="boton-icono boton-menu" id="boton-menu" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="retro">
+    <!-- Portada -->
+    <section class="retro-portada">
+      <div class="contenedor">
+        <p class="retro-sobretitulo">Bogotá presenta · Inspirado en Liverpool, 1960s</p>
+        <h1 class="retro-titulo">Mis gustos</h1>
+        <p class="retro-subtitulo">F1 · Música · Arte · Videojuegos · Comida</p>
+        <p class="retro-intro">Fuera del código también hay mucha Isa. Aquí está todo lo que me hace feliz. Mi color favorito es el
+          <strong>negro</strong>, por eso el resto del sitio es oscuro… pero esta página se viste de los años 60. <span class="kaomoji">ヽ(•‿•)ノ</span></p>
+      </div>
+    </section>
+
+    <!-- Música -->
+    <section class="seccion" id="musica">
+      <div class="contenedor dos-columnas">
+        <div class="aparecer">
+          <span class="retro-etiqueta">Lado A · Música</span>
+          <h2 class="retro-h2">Mi banda favorita: The Beatles</h2>
+          <p>Escucho <strong>todos los géneros</strong>: de The Beatles a Lana Del Rey, de Iron Maiden a lo que salga en el aleatorio.
+            Además <strong>toco guitarra y piano</strong> y me encanta <strong>cantar</strong>. <span class="kaomoji">♪(´▽｀)</span></p>
+          <div class="vinilo" aria-hidden="true"><div class="vinilo-etiqueta"><span>Isa</span><small>Lado A · 33⅓</small></div></div>
+        </div>
+        <div class="aparecer">
+          <div class="fotos-musica">
+            <figure class="polaroid inclinada-izq"><img src="img/gustos/guitarra.jpg" alt="Guitarra eléctrica roja" loading="lazy"><figcaption><strong>Guitarra</strong></figcaption></figure>
+            <figure class="polaroid inclinada-der"><img src="img/gustos/piano.jpg" alt="Teclado con audífonos" loading="lazy"><figcaption><strong>Piano</strong></figcaption></figure>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor" style="margin-top:2.5rem">
+        <div class="retro-marco aparecer">
+          <h3 class="retro-h3">Mi playlist</h3>
+          <iframe class="spotify-marco" title="Playlist de Spotify de Isa"
+            src="https://open.spotify.com/embed/playlist/37i9dQZEVXdjr1atYzJ3fP?utm_source=generator&amp;theme=0"
+            loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <p class="retro-nota">¿No carga? <a href="https://open.spotify.com/playlist/37i9dQZEVXdjr1atYzJ3fP" target="_blank" rel="noopener">Ábrela en Spotify</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- F1 -->
+    <section class="seccion" id="f1">
+      <div class="contenedor dos-columnas">
+        <figure class="polaroid grande inclinada-izq aparecer"><img src="img/gustos/semaforo.jpg" alt="Semáforo de largada con las cinco luces rojas encendidas" loading="lazy"><figcaption><strong>Lights out and away we go</strong></figcaption></figure>
+        <div class="aparecer">
+          <span class="retro-etiqueta">Lado B · Fórmula 1</span>
+          <h2 class="retro-h2">Domingo de carrera</h2>
+          <p>La F1 es mi deporte favorito: me encanta la estrategia, la ingeniería que hay detrás de cada carro y la emoción de cada largada.
+            Soy <strong>fan de Max Verstappen</strong> y de <strong>Red Bull Racing</strong>. Este sitio tiene un <em>Modo F1</em> en su honor
+            y hasta hice un sitio completo sobre la <a href="proyectos.html?tecnologia=html">historia de la F1</a>. <span class="kaomoji">ε=ε=┌( &gt;_&lt;)┘</span></p>
+          <div class="boleto">
+            <table>
+              <caption>Boleto · Fin de semana de Gran Premio</caption>
+              <thead><tr><th>Día</th><th>Sesión</th><th>Lo que hago</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Viernes</th><td>Prácticas libres</td><td>Reviso tiempos y ritmos</td></tr>
+                <tr><th scope="row">Sábado</th><td>Clasificación</td><td>Nervios por la pole (°ロ°)</td></tr>
+                <tr><th scope="row">Domingo</th><td>Carrera</td><td>No me la pierdo por nada</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arte -->
+    <section class="seccion" id="arte">
+      <div class="contenedor">
+        <span class="retro-etiqueta">Exposición · Arte</span>
+        <h2 class="retro-h2">Mis dibujos</h2>
+        <p>Dibujo e ilustro personajes con marcadores, tinta, lápiz y también en digital. Haz clic en un dibujo para verlo en grande. <span class="kaomoji">(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</span></p>
+        <div class="galeria aparecer">
+          <button type="button" aria-label="Ver en grande: Retrato de la banda KISS con marcadores"><img src="img/galeria/dibujo-1.jpg" alt="Retrato de la banda KISS con marcadores" loading="lazy"></button>
+          <button type="button" aria-label="Ver en grande: Personaje de anime con un ave verde, a color"><img src="img/galeria/dibujo-2.jpg" alt="Personaje de anime con un ave verde, a color" loading="lazy"></button>
+          <button type="button" aria-label="Ver en grande: Boceto en tinta de dos trolls"><img src="img/galeria/dibujo-3.jpg" alt="Boceto en tinta de dos trolls" loading="lazy"></button>
+          <button type="button" aria-label="Ver en grande: Personaje de fantasía en lápiz y tinta"><img src="img/galeria/dibujo-4.jpg" alt="Personaje de fantasía en lápiz y tinta" loading="lazy"></button>
+          <button type="button" aria-label="Ver en grande: Calavera con sombrero de copa y serpiente"><img src="img/galeria/dibujo-5.jpg" alt="Calavera con sombrero de copa y serpiente" loading="lazy"></button>
+          <button type="button" aria-label="Ver en grande: Chica de cabello turquesa pintada en tela"><img src="img/galeria/dibujo-6.jpg" alt="Chica de cabello turquesa pintada en tela" loading="lazy"></button>
+          <button type="button" aria-label="Ver en grande: Ilustración digital: chica con un slime verde"><img src="img/galeria/dibujo-7.jpg" alt="Ilustración digital: chica con un slime verde" loading="lazy"></button>
+          <button type="button" aria-label="Ver en grande: Ilustración digital: zorro con poderes de fuego"><img src="img/galeria/dibujo-8.jpg" alt="Ilustración digital: zorro con poderes de fuego" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videojuegos -->
+    <section class="seccion" id="juegos">
+      <div class="contenedor dos-columnas">
+        <div class="aparecer">
+          <span class="retro-etiqueta">Pausa · Videojuegos</span>
+          <h2 class="retro-h2">Player one: Isa</h2>
+          <p>Mientras juego siempre me pregunto cómo programaron cada cosa por dentro. Estos son mis favoritos: <span class="kaomoji">(⌐■_■)</span></p>
+          <ul class="pines"><li class="pin">Valorant</li><li class="pin">League of Legends</li><li class="pin">Avatar: Frontiers of Pandora</li><li class="pin">Demon's Tilt</li><li class="pin">Brawlhalla</li><li class="pin">Todos los juegos de F1</li><li class="pin">Juegos de construcción</li><li class="pin">Juegos de música</li></ul>
+          <p>Y mi lado Na'vi: me encanta el universo de <em>Avatar</em>, por eso este sitio tiene un <strong>Modo Pandora</strong>. Pruébalo con el botón de arriba.</p>
+        </div>
+        <figure class="polaroid grande inclinada-der aparecer"><img src="img/gustos/mi-setup.jpg" alt="Mi portátil con mi personaje de Roblox en pantalla" loading="lazy"><figcaption><strong>Mi rincón gamer</strong></figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Comida -->
+    <section class="seccion" id="comida">
+      <div class="contenedor">
+        <span class="retro-etiqueta">Menú del día · Comida</span>
+        <h2 class="retro-h2">Adoro la comida</h2>
+        <p>Probar platos nuevos es uno de mis planes favoritos. Estos son los que nunca me canso de comer: <span class="kaomoji">(っ˘ڡ˘ς)</span></p>
+        <div class="polaroids">
+          <figure class="polaroid aparecer"><img src="img/comida/bandeja-paisa.jpg" alt="Bandeja paisa" loading="lazy"><figcaption><strong>Bandeja paisa</strong><span>Un clásico colombiano que nunca falla</span></figcaption></figure>
+          <figure class="polaroid aparecer"><img src="img/comida/hamburguesa.jpg" alt="Hamburguesa" loading="lazy"><figcaption><strong>Hamburguesa</strong><span>Con mucho queso y tocineta</span></figcaption></figure>
+          <figure class="polaroid aparecer"><img src="img/comida/fettuccine.jpg" alt="Fettuccine Alfredo" loading="lazy"><figcaption><strong>Fettuccine Alfredo</strong><span>Cremosito, mi pasta favorita</span></figcaption></figure>
+          <figure class="polaroid aparecer"><img src="img/comida/te.jpg" alt="Té de manzana" loading="lazy"><figcaption><strong>Té de manzana</strong><span>Para acompañar las tardes de código</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <div class="contenedor">
+      <div>
+        <h3>Isabel Sofía Piñeros Arias</h3>
+        <p>Estudiante de Ingeniería de Software<br>Bogotá, Colombia</p>
+        <p class="kaomoji-pie">(づ｡◕‿‿◕｡)づ</p>
+      </div>
+      <div>
+        <h3>Navega</h3>
+        <ul>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="gustos.html">Gustos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Hablemos</h3>
+        <ul>
+          <li><a href="mailto:ispasofia02@gmail.com">ispasofia02@gmail.com</a></li>
+          <li><a href="https://github.com/AkaneAmber" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/isabel-pi%C3%B1eros-852089251/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <small>&copy; <span class="anio">2026</span> Isabel Sofía Piñeros Arias · Hecho a mano con HTML, CSS y JavaScript · Publicado con GitHub Pages · Modo F1 / Modo Pandora</small>
+    </div>
+  </footer>
+</body>
+</html>

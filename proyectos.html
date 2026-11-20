@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyectos de software de Isabel Sofía Piñeros Arias.">
+  <meta name="author" content="Isabel Sofía Piñeros Arias">
+  <title>Proyectos | Isabel Piñeros</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/fuentes.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Menú -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="logo" href="index.html">
+        <img src="img/favicon.svg" alt="Logo IP">
+        <span>Isa<span class="resaltado-amarillo">.</span>dev</span>
+      </a>
+      <nav aria-label="Menú principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="gustos.html">Gustos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="acciones-nav">
+        <button class="boton-tema" id="boton-tema" type="button" aria-label="Cambiar a Modo Pandora">✦ <span class="texto-tema">Modo Pandora</span></button>
+        <button class="boton-icono boton-menu" id="boton-menu" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <span class="etiqueta">Proyectos</span>
+        <h1>Cosas que he <span class="caligrafia">construido</span></h1>
+        <p class="texto-suave">Filtra por tecnología o busca una palabra. El formulario usa el método <span class="metodo get">GET</span>:
+          los filtros viajan en la dirección (URL), así que puedes copiarla y compartir el resultado.</p>
+      </div>
+    </section>
+
+    <section class="seccion" style="padding-top:1rem">
+      <div class="contenedor">
+        <!-- Formulario GET -->
+        <form class="tarjeta filtros" id="form-filtro" action="proyectos.html" method="get">
+          <div class="campo" style="margin:0">
+            <label for="tecnologia">Tecnología</label>
+            <select id="tecnologia" name="tecnologia">
+              <option value="todas">Todas</option>
+              <option value="java">Java</option>
+              <option value="python">Python</option>
+              <option value="sql">SQL</option>
+              <option value="html">HTML / CSS / JS</option>
+              <option value="pruebas">Pruebas de software</option>
+              <option value="iot">Internet de las Cosas</option>
+              <option value="trabajo">Proyectos del trabajo</option>
+            </select>
+          </div>
+          <div class="campo" style="margin:0; flex:1; min-width:200px">
+            <label for="buscar">Buscar</label>
+            <input type="search" id="buscar" name="buscar" placeholder="Ej: JavaFX, API, F1…">
+          </div>
+          <button class="boton morado" type="submit">Filtrar</button>
+          <a class="boton secundario" href="proyectos.html">Limpiar</a>
+        </form>
+
+        <p>Mostrando <strong id="contador-proyectos">8</strong> proyecto(s) · URL enviada: <code id="url-get">(aún no has filtrado)</code></p>
+
+        <div class="rejilla">
+          <article class="tarjeta proyecto aparecer" data-tecnologias="python odoo api trabajo">
+            <figure><img src="img/proyectos/odoo-deepseas.svg" alt="Imagen del proyecto Tickets automáticos en Odoo" loading="lazy"></figure>
+            <div class="cuerpo">
+              <h3>Tickets automáticos en Odoo</h3>
+              <p>Integración que consulta incidentes de ciberseguridad por API y crea el ticket en el Helpdesk de Odoo.</p>
+              <ul class="chips"><li class="chip">Python</li><li class="chip">Odoo 15</li><li class="chip">API REST</li><li class="chip">OAuth 2.0</li></ul>
+              <details><summary>Ver detalles</summary><p>Proyecto de mejora en ITS InfoCom. Consume la API con OAuth 2.0, recorre la paginación, convierte las prioridades al formato de Odoo y evita tickets duplicados.</p></details>
+            </div>
+          </article>
+          <article class="tarjeta proyecto aparecer" data-tecnologias="microsoft trabajo">
+            <figure><img src="img/proyectos/contrasenas.svg" alt="Imagen del proyecto Autogestión de contraseñas" loading="lazy"></figure>
+            <div class="cuerpo">
+              <h3>Autogestión de contraseñas</h3>
+              <p>Análisis para que los usuarios cambien sus contraseñas vencidas sin abrir un caso en la mesa de ayuda.</p>
+              <ul class="chips"><li class="chip">Microsoft 365</li><li class="chip">Directorio Activo</li></ul>
+              <details><summary>Ver detalles</summary><p>Estudio de alternativas para sincronizar el Directorio Activo con Microsoft 365 y resolver el caso de los equipos que están fuera de la red de la empresa.</p></details>
+            </div>
+          </article>
+          <article class="tarjeta proyecto aparecer" data-tecnologias="java javafx sql">
+            <figure><img src="img/proyectos/fincar.svg" alt="Imagen del proyecto FinCar" loading="lazy"></figure>
+            <div class="cuerpo">
+              <h3>FinCar</h3>
+              <p>Aplicación de escritorio para venta de carros, aplicando programación orientada a objetos.</p>
+              <ul class="chips"><li class="chip">Java</li><li class="chip">JavaFX</li><li class="chip">MySQL en la nube</li></ul>
+              <details><summary>Ver detalles</summary><p>Conecta con una base de datos MySQL alojada en la nube para poder usarse desde cualquier equipo.</p></details>
+            </div>
+          </article>
+          <article class="tarjeta proyecto aparecer" data-tecnologias="java javafx">
+            <figure><img src="img/proyectos/empleados.svg" alt="Imagen del proyecto EmpleadosApp" loading="lazy"></figure>
+            <div class="cuerpo">
+              <h3>EmpleadosApp</h3>
+              <p>Gestión de empleados con dos ventanas: agregar, editar, eliminar, exportar e importar.</p>
+              <ul class="chips"><li class="chip">Java</li><li class="chip">JavaFX</li><li class="chip">NetBeans</li><li class="chip">Archivos .txt</li></ul>
+              <details><summary>Ver detalles</summary><p>Los datos se guardan en un archivo de texto y se pueden exportar e importar.</p></details>
+            </div>
+          </article>
+          <article class="tarjeta proyecto aparecer" data-tecnologias="iot python">
+            <figure><img src="img/proyectos/iot.svg" alt="Imagen del proyecto Monitoreo IoT con ESP32" loading="lazy"></figure>
+            <div class="cuerpo">
+              <h3>Monitoreo IoT con ESP32</h3>
+              <p>Simulación de un sensor de temperatura y humedad que envía datos a un dashboard en tiempo real.</p>
+              <ul class="chips"><li class="chip">ESP32</li><li class="chip">Wokwi</li><li class="chip">Node-RED</li><li class="chip">MQTT</li></ul>
+              <details><summary>Ver detalles</summary><p>El ESP32 publica las lecturas por MQTT / API REST y Node-RED las muestra en un tablero con gráficas.</p></details>
+            </div>
+          </article>
+          <article class="tarjeta proyecto aparecer" data-tecnologias="pruebas">
+            <figure><img src="img/proyectos/jmeter.svg" alt="Imagen del proyecto Plan de pruebas de rendimiento" loading="lazy"></figure>
+            <div class="cuerpo">
+              <h3>Plan de pruebas de rendimiento</h3>
+              <p>Plan de pruebas de carga para el portal bogota.gov.co siguiendo la norma IEEE 29119.</p>
+              <ul class="chips"><li class="chip">Apache JMeter</li><li class="chip">IEEE 29119</li></ul>
+              <details><summary>Ver detalles</summary><p>Definición de escenarios, usuarios concurrentes, métricas (tiempo de respuesta, errores, throughput) y criterios de aceptación.</p></details>
+            </div>
+          </article>
+          <article class="tarjeta proyecto aparecer" data-tecnologias="pruebas sql">
+            <figure><img src="img/proyectos/pentest.svg" alt="Imagen del proyecto Informe de pruebas de caja blanca" loading="lazy"></figure>
+            <div class="cuerpo">
+              <h3>Informe de pruebas de caja blanca</h3>
+              <p>Simulación de ataques de inyección SQL y recomendaciones para proteger la aplicación.</p>
+              <ul class="chips"><li class="chip">SQL</li><li class="chip">Seguridad</li><li class="chip">Caja blanca</li></ul>
+              <details><summary>Ver detalles</summary><p>Identificación de consultas vulnerables y uso de consultas parametrizadas como solución.</p></details>
+            </div>
+          </article>
+          <article class="tarjeta proyecto aparecer" data-tecnologias="html css javascript frontend">
+            <figure><img src="img/proyectos/f1.svg" alt="Imagen del proyecto Sitio web: Historia de la F1" loading="lazy"></figure>
+            <div class="cuerpo">
+              <h3>Sitio web: Historia de la F1</h3>
+              <p>Sitio web informativo sobre la historia de la Fórmula 1, publicado en GitHub Pages.</p>
+              <ul class="chips"><li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li><li class="chip">GitHub Pages</li></ul>
+              <details><summary>Ver detalles</summary><p>Mi primer sitio completo del curso Introducción a los lenguajes de Internet: varias páginas enlazadas, tablas e imágenes.</p></details>
+            </div>
+          </article>
+        </div>
+        <p id="sin-resultados" class="tarjeta sin-resultados oculto">(╥﹏╥) No encontré proyectos con ese filtro. <a href="proyectos.html">Ver todos</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <div class="contenedor">
+      <div>
+        <h3>Isabel Sofía Piñeros Arias</h3>
+        <p>Estudiante de Ingeniería de Software<br>Bogotá, Colombia</p>
+        <p class="kaomoji-pie">(づ｡◕‿‿◕｡)づ</p>
+      </div>
+      <div>
+        <h3>Navega</h3>
+        <ul>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="gustos.html">Gustos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Hablemos</h3>
+        <ul>
+          <li><a href="mailto:ispasofia02@gmail.com">ispasofia02@gmail.com</a></li>
+          <li><a href="https://github.com/AkaneAmber" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/isabel-pi%C3%B1eros-852089251/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <small>&copy; <span class="anio">2026</span> Isabel Sofía Piñeros Arias · Hecho a mano con HTML, CSS y JavaScript · Publicado con GitHub Pages · Modo F1 / Modo Pandora</small>
+    </div>
+  </footer>
+</body>
+</html>

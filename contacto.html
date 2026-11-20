@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de contacto de Isabel Sofía Piñeros Arias.">
+  <meta name="author" content="Isabel Sofía Piñeros Arias">
+  <title>Contacto | Isabel Piñeros</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/fuentes.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Menú -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="logo" href="index.html">
+        <img src="img/favicon.svg" alt="Logo IP">
+        <span>Isa<span class="resaltado-amarillo">.</span>dev</span>
+      </a>
+      <nav aria-label="Menú principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="gustos.html">Gustos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="acciones-nav">
+        <button class="boton-tema" id="boton-tema" type="button" aria-label="Cambiar a Modo Pandora">✦ <span class="texto-tema">Modo Pandora</span></button>
+        <button class="boton-icono boton-menu" id="boton-menu" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <span class="etiqueta">Contacto</span>
+        <h1>¿Trabajamos <span class="caligrafia">juntos</span>?</h1>
+        <p class="texto-suave">Podemos crear algo funcional y, además, bonito. Escríbeme por el formulario o por mis redes. <span class="kaomoji">(｡•̀ᴗ-)✧</span><br>
+          Esta página también muestra cómo un sitio se comunica con un servidor usando los métodos <span class="metodo post">POST</span> y <span class="metodo put">PUT</span>.</p>
+      </div>
+    </section>
+
+    <section class="seccion" style="padding-top:1rem">
+      <div class="contenedor dos-columnas">
+        <!-- Formulario POST -->
+        <form class="tarjeta aparecer" id="form-contacto" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <h2>Envíame un mensaje <span class="metodo post">POST</span></h2>
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required minlength="3" placeholder="Tu nombre">
+          </div>
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required placeholder="nombre@empresa.com">
+          </div>
+          <div class="campo">
+            <label for="motivo">Motivo</label>
+            <select id="motivo" name="motivo" required>
+              <option value="" disabled selected>Elige una opción</option>
+              <option>Oferta laboral</option>
+              <option>Prácticas profesionales</option>
+              <option>Proyecto de frontend</option>
+              <option>Solo quiero saludar</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Cuéntame en qué te puedo ayudar"></textarea>
+          </div>
+          <button class="boton" type="submit">Enviar mensaje</button>
+          <div id="respuesta-post" class="respuesta-servidor oculto" aria-live="polite"></div>
+        </form>
+
+        <div>
+          <!-- Formulario PUT -->
+          <form class="tarjeta aparecer" id="form-disponibilidad" data-url="https://jsonplaceholder.typicode.com/posts/1">
+            <h2>Actualizar disponibilidad <span class="metodo put">PUT</span></h2>
+            <p>Estado actual: <strong id="estado-disponibilidad">Disponible para prácticas</strong></p>
+            <div class="campo">
+              <label for="estado">Nuevo estado</label>
+              <select id="estado" name="estado">
+                <option>Disponible para prácticas</option>
+                <option>Disponible para proyectos de frontend</option>
+                <option>Disponible medio tiempo</option>
+                <option>No disponible por ahora</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="horario">Horario preferido</label>
+              <input type="text" id="horario" name="horario" value="Lunes a viernes, jornada mañana">
+            </div>
+            <label class="campo-linea"><input type="checkbox" name="remoto" checked> Acepto trabajo remoto</label>
+            <br>
+            <button class="boton morado" type="submit">Actualizar</button>
+            <div id="respuesta-put" class="respuesta-servidor oculto" aria-live="polite"></div>
+          </form>
+
+          <div class="tabla-envoltura aparecer" style="margin-top:2rem">
+            <table>
+              <caption>Otras formas de contacto</caption>
+              <tbody>
+                <tr><th scope="row">Correo</th><td><a href="mailto:ispasofia02@gmail.com">ispasofia02@gmail.com</a></td></tr>
+                <tr><th scope="row">Teléfono</th><td><a href="tel:+573112365964">+57 311 236 5964</a></td></tr>
+                <tr><th scope="row">GitHub</th><td><a href="https://github.com/AkaneAmber" target="_blank" rel="noopener">github.com/AkaneAmber</a></td></tr>
+                <tr><th scope="row">LinkedIn</th><td><a href="https://www.linkedin.com/in/isabel-pi%C3%B1eros-852089251/" target="_blank" rel="noopener">Isabel Piñeros</a></td></tr>
+                <tr><th scope="row">Ubicación</th><td>Bogotá, Colombia</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" style="padding-top:0">
+      <div class="contenedor">
+        <div class="tabla-envoltura aparecer">
+          <table>
+            <caption>¿Qué hace cada método en este sitio?</caption>
+            <thead><tr><th>Método</th><th>Para qué sirve</th><th>Dónde lo uso</th></tr></thead>
+            <tbody>
+              <tr><td><span class="metodo get">GET</span></td><td>Pedir / consultar información. Los datos van en la URL.</td><td>Filtro de la página <a href="proyectos.html">Proyectos</a></td></tr>
+              <tr><td><span class="metodo post">POST</span></td><td>Crear un registro nuevo. Los datos van en el cuerpo de la petición.</td><td>Formulario “Envíame un mensaje”</td></tr>
+              <tr><td><span class="metodo put">PUT</span></td><td>Actualizar (reemplazar) un registro que ya existe.</td><td>Formulario “Actualizar disponibilidad”</td></tr>
+            </tbody>
+            <tfoot><tr><td colspan="3">Las peticiones POST y PUT se envían a JSONPlaceholder, una API pública de pruebas que responde como un servidor real.</td></tr></tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <div class="contenedor">
+      <div>
+        <h3>Isabel Sofía Piñeros Arias</h3>
+        <p>Estudiante de Ingeniería de Software<br>Bogotá, Colombia</p>
+        <p class="kaomoji-pie">(づ｡◕‿‿◕｡)づ</p>
+      </div>
+      <div>
+        <h3>Navega</h3>
+        <ul>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="gustos.html">Gustos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Hablemos</h3>
+        <ul>
+          <li><a href="mailto:ispasofia02@gmail.com">ispasofia02@gmail.com</a></li>
+          <li><a href="https://github.com/AkaneAmber" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/isabel-pi%C3%B1eros-852089251/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <small>&copy; <span class="anio">2026</span> Isabel Sofía Piñeros Arias · Hecho a mano con HTML, CSS y JavaScript · Publicado con GitHub Pages · Modo F1 / Modo Pandora</small>
+    </div>
+  </footer>
+</body>
+</html>

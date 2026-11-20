@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hoja de vida web de Isabel Sofía Piñeros Arias, estudiante de Ingeniería de Software y aprendiz en ITS InfoCom.">
+  <meta name="author" content="Isabel Sofía Piñeros Arias">
+  <title>Inicio | Isabel Piñeros</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/fuentes.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Menú -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="logo" href="index.html">
+        <img src="img/favicon.svg" alt="Logo IP">
+        <span>Isa<span class="resaltado-amarillo">.</span>dev</span>
+      </a>
+      <nav aria-label="Menú principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="gustos.html">Gustos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="acciones-nav">
+        <button class="boton-tema" id="boton-tema" type="button" aria-label="Cambiar a Modo Pandora">✦ <span class="texto-tema">Modo Pandora</span></button>
+        <button class="boton-icono boton-menu" id="boton-menu" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Semáforo -->
+    <div class="largada" id="largada" aria-hidden="true">
+      <div>
+        <div class="luces"><span class="luz"></span><span class="luz"></span><span class="luz"></span><span class="luz"></span><span class="luz"></span></div>
+        <p>Preparados…</p>
+        <div style="text-align:center"><button type="button">Saltar</button></div>
+      </div>
+    </div>
+
+    <!-- Portada -->
+    <section class="hero">
+      <div class="contenedor">
+        <div>
+          <span class="etiqueta">Hoja de vida · Portafolio</span>
+          <p class="numero-piloto">Piloto #04 · Ingeniería de Software</p>
+          <h1>Hola, <span style="white-space:nowrap">soy <span class="caligrafia">Isa</span></span></h1>
+          <p class="lead">Me apasiona la <strong id="texto-escribiendo" class="escribiendo">Ingeniería de Software</strong></p>
+          <p>Soy <strong>Isabel Sofía Piñeros Arias</strong>, estudiante de <em>Ingeniería de Software</em> en la
+            Fundación Universitaria Compensar y <mark>aprendiz en ITS InfoCom</mark>. Me encanta el <strong>frontend</strong>
+            e intento mezclar mi gusto por el <strong>dibujo</strong> con la programación. <span class="kaomoji">(◕‿◕✿)</span></p>
+          <div class="grupo-botones">
+            <a class="boton" href="proyectos.html">Ver mis proyectos →</a>
+            <a class="boton secundario" href="contacto.html">Contáctame</a>
+          </div>
+        </div>
+        <div class="marco-foto">
+          <div class="foto"><img src="img/foto-isa.jpg" alt="Foto de Isabel Sofía Piñeros Arias sonriendo, con gafas de marco azul" width="640" height="800"></div>
+          <span class="burbuja b1">Team Max ᕦ(ò_ó)ᕤ</span>
+          <span class="burbuja b2">Bogotá ♡</span>
+          <span class="burbuja b3">The Beatles ♪</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banda -->
+    <div class="banda" aria-hidden="true">
+      <div class="banda-pista">
+        <span>Java</span><span>Python</span><span>SQL</span><span>PL/SQL</span><span>JavaFX</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Odoo</span><span>JMeter</span><span>Linux</span><span>Git</span>
+        <span>Java</span><span>Python</span><span>SQL</span><span>PL/SQL</span><span>JavaFX</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Odoo</span><span>JMeter</span><span>Linux</span><span>Git</span>
+      </div>
+    </div>
+
+    <!-- Tarjetas -->
+    <section class="seccion">
+      <div class="contenedor">
+        <span class="etiqueta">Explora</span>
+        <h2>¿Qué quieres <span class="caligrafia">conocer</span> de mí?</h2>
+        <div class="rejilla">
+          <a class="tarjeta aparecer" href="sobre-mi.html">
+            <span class="numero-fondo">01</span>
+            <div class="icono">(•‿•)</div>
+            <h3>Sobre mí</h3>
+            <p>Quién soy, mis datos personales, mi pasaporte de idiomas y lo que busco como desarrolladora.</p>
+            <span class="ver-mas">Leer más →</span>
+          </a>
+          <a class="tarjeta aparecer" href="formacion.html">
+            <span class="numero-fondo">02</span>
+            <div class="icono">φ(..)</div>
+            <h3>Formación</h3>
+            <p>Mi carrera en Ingeniería de Software y los cursos que han marcado mi camino.</p>
+            <span class="ver-mas">Leer más →</span>
+          </a>
+          <a class="tarjeta aparecer" href="experiencia.html">
+            <span class="numero-fondo">03</span>
+            <div class="icono">ᕦ(ò_ó)ᕤ</div>
+            <h3>Experiencia</h3>
+            <p>Mi trabajo como aprendiz en ITS InfoCom y el panel de telemetría de mis habilidades.</p>
+            <span class="ver-mas">Leer más →</span>
+          </a>
+          <a class="tarjeta aparecer" href="proyectos.html">
+            <span class="numero-fondo">04</span>
+            <div class="icono">&lt;/&gt;</div>
+            <h3>Proyectos</h3>
+            <p>Aplicaciones, integraciones y pruebas que he construido en la universidad y en el trabajo.</p>
+            <span class="ver-mas">Leer más →</span>
+          </a>
+          <a class="tarjeta aparecer" href="gustos.html">
+            <span class="numero-fondo">05</span>
+            <div class="icono">♪(^∇^)</div>
+            <h3>Gustos</h3>
+            <p>La F1, The Beatles, mis dibujos, los videojuegos y la comida. Lo que me hace ser yo.</p>
+            <span class="ver-mas">Leer más →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lema -->
+    <section class="seccion" style="padding-top:0">
+      <div class="contenedor dos-columnas">
+        <div class="aparecer">
+          <span class="etiqueta">En pocas palabras</span>
+          <h2>Aprendo rápido y <span class="caligrafia">me encanta</span> resolver problemas</h2>
+          <p>Combino lo que aprendo en clase con retos reales del trabajo: desde integrar sistemas por
+            <abbr title="Application Programming Interface">API</abbr> hasta diseñar planes de pruebas de rendimiento.</p>
+        </div>
+        <blockquote class="aparecer">
+          “Por más pereza o ganas de jugar que tenga, la programación siempre gana, porque me encanta.”
+          <cite>— Mi lema <span class="kaomoji">(｀・ω・´)ゞ</span></cite>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <div class="contenedor">
+      <div>
+        <h3>Isabel Sofía Piñeros Arias</h3>
+        <p>Estudiante de Ingeniería de Software<br>Bogotá, Colombia</p>
+        <p class="kaomoji-pie">(づ｡◕‿‿◕｡)づ</p>
+      </div>
+      <div>
+        <h3>Navega</h3>
+        <ul>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="gustos.html">Gustos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Hablemos</h3>
+        <ul>
+          <li><a href="mailto:ispasofia02@gmail.com">ispasofia02@gmail.com</a></li>
+          <li><a href="https://github.com/AkaneAmber" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/isabel-pi%C3%B1eros-852089251/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <small>&copy; <span class="anio">2026</span> Isabel Sofía Piñeros Arias · Hecho a mano con HTML, CSS y JavaScript · Publicado con GitHub Pages · Modo F1 / Modo Pandora</small>
+    </div>
+  </footer>
+</body>
+</html>
